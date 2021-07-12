@@ -86,6 +86,7 @@ def tag_missing_string(df, fill_columns):
         
     return df, cols_, cols_missing
 
+# %%
 ### Fill missing values ----
 df_to_missing = df_train_filtered.select_dtypes(include=np.number)
 df_train_numeric_missing,  df_train_numeric_missing_columns = tag_missing(df_to_missing, df_to_missing.columns)
